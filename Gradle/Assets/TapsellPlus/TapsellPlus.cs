@@ -270,6 +270,7 @@ namespace TapsellPlusSDK
             tapsellPlusNativeBannerAd.description= args.nativeAd.GetBodyText();
             tapsellPlusNativeBannerAd.title = args.nativeAd.GetHeadlineText();
             tapsellPlusNativeBannerAd.callToActionText = args.nativeAd.GetCallToActionText();
+            tapsellPlusNativeBannerAd.iconImage = iconTexture;
             
             plugin.sendResponseReportToAndroid(zoneId,  "AD_MOB");
             plugin.sendWinReportToAndroid(zoneId, adNetworkZoneId,"AD_MOB");
