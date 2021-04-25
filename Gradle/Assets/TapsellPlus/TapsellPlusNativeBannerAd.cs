@@ -1,4 +1,4 @@
-﻿using GoogleMobileAds.Api;
+using GoogleMobileAds.Api;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -66,6 +66,7 @@ namespace TapsellPlusSDK
 
         private bool callTapsellRegister(GameObject gameObject)
         {
+            UnRegisterTapsellComponent(gameObject);
             if (UnifiedNativeAd != null) return false;
             RegisterTapsellComponent(gameObject);
                 
@@ -73,12 +74,27 @@ namespace TapsellPlusSDK
 
         }
 
+        private void UnRegisterTapsellComponent(GameObject gameObject)
+        {
+            if (gameObject.transform as RectTransform)
+            {
+                var component = gameObject.GetComponent<Button>();
+                
+                if (component == null)
+                {
+                    
+                    component = gameObject.AddComponent<Button>();
+                }
+                
+                component.onClick.RemoveAllListeners();
+            }
+        }
+
         private void RegisterTapsellComponent(GameObject gameObject)
         {
             
             if (gameObject.transform as RectTransform)
             {
-                
                 var component = gameObject.GetComponent<Button>();
                 
                 if (component == null)
