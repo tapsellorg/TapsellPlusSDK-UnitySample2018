@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: b27c2ab3485c4e588789472cd6ffeb5b
 labels:
 - gvh
-- gvh_version-5.2.0.1
+- gvh_version-5.4.0.90
 - gvhp_exportpath-GoogleMobileAds/GoogleMobileAds.Platforms.dll
 PluginImporter:
   externalObjects: {}
