@@ -121,7 +121,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 2.5
+  bundleVersion: 2.1.2
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -159,7 +159,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: ir.tapsell.plussample.unity
+    Android: ir.tapsell.plussample.unity2018
     Standalone: ir.tapsell.plussample.unity
   buildNumber: {}
   AndroidBundleVersionCode: 1
